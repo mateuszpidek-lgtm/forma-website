@@ -264,7 +264,7 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:64px 5% 24px}
 @keyframes yt-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 .yt-card{flex:0 0 190px;background:#0b0b10;border-radius:20px;overflow:hidden;cursor:pointer;box-shadow:0 10px 26px rgba(11,20,38,.14);transition:transform .25s}
 @media (hover:none),(max-width:680px){
-  .yt-strip{animation:none!important;overflow-x:auto;-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity}
+  .yt-strip{width:100%;animation:none!important;overflow-x:auto;-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity;touch-action:pan-x}
   .yt-strip::-webkit-scrollbar{display:none}
   .yt-card{scroll-snap-align:start}
 }
