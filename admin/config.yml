@@ -21,11 +21,71 @@ collections:
           - { label: "Nagłówek sekcji 'O nas'", name: "about_heading", widget: "string", hint: "Można użyć <br> dla podziału linii." }
           - { label: "Tekst sekcji 'O nas'", name: "about_text", widget: "text" }
           - { label: "Zajawka nad formularzem kontaktowym", name: "kontakt_lead", widget: "string" }
-          - { label: "Telefon", name: "kontakt_phone", widget: "string" }
+          - { label: "Nagłówek 'Co nas wyróżnia?'", name: "wyroznia_heading", widget: "string" }
+          - { label: "Nagłówek: Zajęcia artystyczne", name: "artystyczne_heading", widget: "string", hint: "Można użyć <br> dla podziału linii." }
+          - { label: "Opis: Zajęcia artystyczne", name: "artystyczne_lead", widget: "text" }
+          - { label: "Nagłówek: Zajęcia taneczne", name: "taneczne_heading", widget: "string", hint: "Można użyć <br> dla podziału linii." }
+          - { label: "Opis: Zajęcia taneczne", name: "taneczne_lead", widget: "text" }
+          - { label: "Nagłówek: Zajęcia sportowe", name: "sportowe_heading", widget: "string", hint: "Można użyć <br> dla podziału linii." }
+          - { label: "Opis: Zajęcia sportowe", name: "sportowe_lead", widget: "text" }
+          - { label: "Nagłówek: Co oferujemy? (matura)", name: "matura_oferta_heading", widget: "string" }
+          - { label: "Opis: Co oferujemy? (matura)", name: "matura_oferta_lead", widget: "text" }
+          - { label: "Nagłówek: Nasz ebook", name: "produkty_heading", widget: "string" }
+          - { label: "Tekst w stopce (copyright)", name: "footer_copyright", widget: "string" }
+
+  - name: "company"
+    label: "Dane firmowe i social media"
+    files:
+      - name: "company"
+        label: "Dane firmowe i social media"
+        file: "data/company.json"
+        fields:
+          - { label: "Telefon (do linku tel:, np. +48518575233)", name: "kontakt_phone", widget: "string" }
+          - { label: "Telefon (wyświetlany tekst)", name: "kontakt_phone_display", widget: "string" }
           - { label: "E-mail", name: "kontakt_email", widget: "string" }
           - { label: "Start zajęć", name: "kontakt_start", widget: "string" }
           - { label: "Informacja o zapisach", name: "kontakt_zapisy", widget: "string" }
-          - { label: "Adres", name: "kontakt_address", widget: "string" }
+          - { label: "Adres (ulica, kod, miasto)", name: "kontakt_address", widget: "string" }
+          - { label: "Nazwa szkoły / placówki", name: "school_name", widget: "string" }
+          - { label: "Link do Instagrama", name: "instagram_url", widget: "string" }
+          - { label: "Link do YouTube", name: "youtube_url", widget: "string" }
+          - { label: "Link do TikToka", name: "tiktok_url", widget: "string" }
+
+  - name: "section_images"
+    label: "Zdjęcia i ikony sekcji"
+    files:
+      - name: "section_images"
+        label: "Zdjęcia i ikony sekcji"
+        file: "data/section-images.json"
+        fields:
+          - name: "artystyczne"
+            label: "Zajęcia artystyczne"
+            widget: "object"
+            fields:
+              - { label: "Ikona / logo", name: "badge", widget: "image" }
+              - { label: "Zdjęcie zajęć", name: "photo", widget: "image" }
+              - { label: "Etykieta w hero (rotujące logo)", name: "hero_label", widget: "string" }
+          - name: "taneczne"
+            label: "Zajęcia taneczne"
+            widget: "object"
+            fields:
+              - { label: "Ikona / logo", name: "badge", widget: "image" }
+              - { label: "Zdjęcie zajęć", name: "photo", widget: "image" }
+              - { label: "Etykieta w hero (rotujące logo)", name: "hero_label", widget: "string" }
+          - name: "sportowe"
+            label: "Zajęcia sportowe"
+            widget: "object"
+            fields:
+              - { label: "Ikona / logo", name: "badge", widget: "image" }
+              - { label: "Zdjęcie zajęć", name: "photo", widget: "image" }
+              - { label: "Etykieta w hero (rotujące logo)", name: "hero_label", widget: "string" }
+          - name: "matura"
+            label: "Matematyka maturalna"
+            widget: "object"
+            fields:
+              - { label: "Ikona / logo", name: "badge", widget: "image" }
+              - { label: "Zdjęcie zajęć", name: "photo", widget: "image" }
+              - { label: "Etykieta w hero (rotujące logo)", name: "hero_label", widget: "string" }
 
   - name: "pricing_dzieci"
     label: "Cennik — zajęcia dla dzieci"

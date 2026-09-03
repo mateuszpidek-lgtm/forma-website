@@ -1,0 +1,22 @@
+{
+  "artystyczne": {
+    "badge": "/images/sections/badge-artystyczne.png",
+    "hero_label": "Forma artystyczna",
+    "photo": "/images/sections/photo-artystyczne.jpeg"
+  },
+  "taneczne": {
+    "badge": "/images/sections/badge-taneczne.png",
+    "hero_label": "Forma taneczna",
+    "photo": "/images/sections/photo-taneczne.jpeg"
+  },
+  "sportowe": {
+    "badge": "/images/sections/badge-sportowe.png",
+    "hero_label": "Forma od małego",
+    "photo": "/images/sections/photo-sportowe.jpeg"
+  },
+  "matura": {
+    "badge": "/images/sections/badge-matura.png",
+    "hero_label": "Matematyka 101",
+    "photo": "/images/sections/photo-matura.jpeg"
+  }
+}
