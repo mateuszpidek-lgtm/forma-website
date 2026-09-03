@@ -1,0 +1,71 @@
+{
+  "cards": [
+    {
+      "cat": "art",
+      "badge": "Artystyczne · 4–12 lat",
+      "badgeClass": "dzieci",
+      "title": "Warsztaty artystyczne",
+      "meta": [
+        {
+          "icon": "🗓️",
+          "text": "Środy: 16:00–17:00 / 17:00–18:00 / 18:00–19:00"
+        },
+        {
+          "icon": "👥",
+          "text": "Ok. 10 osób w grupie"
+        },
+        {
+          "icon": "🎨",
+          "text": "W cenie: farby, pędzle, płótna, glina i inne materiały"
+        }
+      ],
+      "frequency": "1x/tydz.",
+      "price": "200 zł/mies.",
+      "discount": "-20% dla uczniów EDUCO",
+      "buttonText": "Zapisz się",
+      "formTag": "Zajęcia artystyczne"
+    },
+    {
+      "cat": "sport",
+      "badge": "Sportowe · 7–12 lat",
+      "badgeClass": "sport",
+      "title": "Zajęcia sportowe",
+      "meta": [
+        {
+          "icon": "🗓️",
+          "text": "Wtorki i czwartki: 16:00–17:00 / 17:00–18:00 / 18:00–19:00"
+        },
+        {
+          "icon": "👥",
+          "text": "Ok. 10 osób w grupie"
+        }
+      ],
+      "frequency": "1x/tydz.",
+      "price": "160 zł/mies.",
+      "discount": "-20% dla uczniów EDUCO",
+      "buttonText": "Zapisz się",
+      "formTag": "Zajęcia sportowe"
+    },
+    {
+      "cat": "dance",
+      "badge": "Taneczne · 7–12 lat",
+      "badgeClass": "matura",
+      "title": "Zajęcia taneczne",
+      "meta": [
+        {
+          "icon": "🗓️",
+          "text": "Wtorki i czwartki: 16:00–17:00 / 17:00–18:00"
+        },
+        {
+          "icon": "👥",
+          "text": "Ok. 10 osób w grupie"
+        }
+      ],
+      "frequency": "1x/tydz.",
+      "price": "160 zł/mies.",
+      "discount": "-20% dla uczniów EDUCO",
+      "buttonText": "Zapisz się",
+      "formTag": "Zajęcia taneczne"
+    }
+  ]
+}

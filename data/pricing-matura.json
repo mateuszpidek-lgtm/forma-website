@@ -1,0 +1,40 @@
+{
+  "cards": [
+    {
+      "cat": "podst",
+      "badge": "Matura podstawowa",
+      "badgeClass": "matura",
+      "title": "Grupa maturalna — poziom podstawowy",
+      "metaText": "Czas trwania: 1h<br>Prowadzi: Paula Makuś<br>Miejsca dostępne",
+      "frequency": "2x/tydz.",
+      "price": "400 zł/mies.",
+      "discount": "",
+      "buttonText": "Zapisz się",
+      "formTag": "Matematyka maturalna"
+    },
+    {
+      "cat": "zaaw",
+      "badge": "Grupa zaawansowana",
+      "badgeClass": "matura",
+      "title": "Zaawansowana grupa maturalna - poziom podstawowy",
+      "metaText": "Czas trwania: 1h · 2x w tygodniu<br>Prowadzi: Paula Makuś<br>Miejsca dostępne",
+      "frequency": "2x/tydz.",
+      "price": "400 zł/mies.",
+      "discount": "",
+      "buttonText": "Zapisz się",
+      "formTag": "Matematyka maturalna"
+    },
+    {
+      "cat": "indyw",
+      "badge": "Indywidualnie",
+      "badgeClass": "dzieci",
+      "title": "Korepetycje 1:1 — dowolny termin",
+      "metaText": "Do ustalenia z uczniem<br>Prowadzi: Paula Makuś<br>Miejsca dostępne",
+      "frequency": "1 godzina",
+      "price": "120 zł/godz.",
+      "discount": "",
+      "buttonText": "Zapisz się",
+      "formTag": "Matematyka maturalna"
+    }
+  ]
+}

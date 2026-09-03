@@ -1,0 +1,110 @@
+backend:
+  name: github
+  repo: mateuszpidek-lgtm/forma-website
+  branch: main
+  base_url: https://forma-cms-auth.mateusz-pidek.workers.dev
+  auth_endpoint: auth
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+locale: "pl"
+
+collections:
+  - name: "site_texts"
+    label: "Teksty strony"
+    files:
+      - name: "site_texts"
+        label: "Teksty strony"
+        file: "data/site-texts.json"
+        fields:
+          - { label: "Nagłówek sekcji 'O nas'", name: "about_heading", widget: "string", hint: "Można użyć <br> dla podziału linii." }
+          - { label: "Tekst sekcji 'O nas'", name: "about_text", widget: "text" }
+          - { label: "Zajawka nad formularzem kontaktowym", name: "kontakt_lead", widget: "string" }
+          - { label: "Telefon", name: "kontakt_phone", widget: "string" }
+          - { label: "E-mail", name: "kontakt_email", widget: "string" }
+          - { label: "Start zajęć", name: "kontakt_start", widget: "string" }
+          - { label: "Informacja o zapisach", name: "kontakt_zapisy", widget: "string" }
+          - { label: "Adres", name: "kontakt_address", widget: "string" }
+
+  - name: "pricing_dzieci"
+    label: "Cennik — zajęcia dla dzieci"
+    files:
+      - name: "pricing_dzieci"
+        label: "Cennik — zajęcia dla dzieci"
+        file: "data/pricing-dzieci.json"
+        fields:
+          - name: "cards"
+            label: "Karty cennika"
+            widget: "list"
+            summary: "{{title}} — {{price}}"
+            fields:
+              - { label: "Kategoria (art / sport / dance)", name: "cat", widget: "select", options: ["art", "sport", "dance"] }
+              - { label: "Etykieta (badge)", name: "badge", widget: "string" }
+              - { label: "Kolor etykiety", name: "badgeClass", widget: "select", options: ["dzieci", "sport", "matura"] }
+              - { label: "Tytuł zajęć", name: "title", widget: "string" }
+              - name: "meta"
+                label: "Wiersze informacyjne"
+                widget: "list"
+                fields:
+                  - { label: "Ikona (emoji)", name: "icon", widget: "string" }
+                  - { label: "Tekst", name: "text", widget: "string" }
+              - { label: "Częstotliwość (np. 1x/tydz.)", name: "frequency", widget: "string" }
+              - { label: "Cena (np. 200 zł/mies.)", name: "price", widget: "string" }
+              - { label: "Rabat (opcjonalnie)", name: "discount", widget: "string", required: false }
+              - { label: "Tekst przycisku", name: "buttonText", widget: "string" }
+              - { label: "Temat w formularzu zgłoszeniowym", name: "formTag", widget: "string" }
+
+  - name: "pricing_matura"
+    label: "Cennik — matura z matematyki"
+    files:
+      - name: "pricing_matura"
+        label: "Cennik — matura z matematyki"
+        file: "data/pricing-matura.json"
+        fields:
+          - name: "cards"
+            label: "Karty cennika"
+            widget: "list"
+            summary: "{{title}} — {{price}}"
+            fields:
+              - { label: "Kategoria (podst / zaaw / indyw)", name: "cat", widget: "select", options: ["podst", "zaaw", "indyw"] }
+              - { label: "Etykieta (badge)", name: "badge", widget: "string" }
+              - { label: "Kolor etykiety", name: "badgeClass", widget: "select", options: ["dzieci", "sport", "matura"] }
+              - { label: "Tytuł", name: "title", widget: "string" }
+              - { label: "Opis (HTML, można użyć <br>)", name: "metaText", widget: "text" }
+              - { label: "Częstotliwość (np. 2x/tydz.)", name: "frequency", widget: "string" }
+              - { label: "Cena (np. 400 zł/mies.)", name: "price", widget: "string" }
+              - { label: "Rabat (opcjonalnie)", name: "discount", widget: "string", required: false }
+              - { label: "Tekst przycisku", name: "buttonText", widget: "string" }
+              - { label: "Temat w formularzu zgłoszeniowym", name: "formTag", widget: "string" }
+
+  - name: "instagram"
+    label: "Posty Instagram / Blog"
+    files:
+      - name: "instagram"
+        label: "Posty Instagram / Blog"
+        file: "data/instagram.json"
+        fields:
+          - name: "posts"
+            label: "Posty"
+            widget: "list"
+            summary: "{{caption}}"
+            fields:
+              - { label: "ID posta z Instagrama (z linku instagram.com/p/XXXX)", name: "id", widget: "string" }
+              - { label: "Zdjęcie", name: "img", widget: "image" }
+              - { label: "Podpis", name: "caption", widget: "text" }
+
+  - name: "youtube"
+    label: "Filmy YouTube"
+    files:
+      - name: "youtube"
+        label: "Filmy YouTube"
+        file: "data/youtube.json"
+        fields:
+          - name: "videos"
+            label: "Filmy"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "ID filmu z YouTube (z linku youtube.com/watch?v=XXXX)", name: "id", widget: "string" }
+              - { label: "Tytuł", name: "title", widget: "string" }
